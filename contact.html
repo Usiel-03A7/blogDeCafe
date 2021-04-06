@@ -30,19 +30,27 @@
         </div>
     </header>
 
-    <div class="container">
-        <h3 class="text-center">Sobre Nosotros</h3>
-        <div class="about-us">
-            <div class="about-us__image">
-                <img src="img/nosotros.jpg" alt="imagen nosotros">
+    <main class="container">
+        <h3 class="text-center">Contacto</h3>
+        <div class="contact-bg"></div>
+        <form class="form">
+            <div class="field">
+                <label class="field__label" for="name" >Nombre: </label>
+                <input id="name" class="field__campo" type="text" placeholder="Tu Nombre">
             </div>
-            <div class="about-us__text">
-                <p class="no-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit exercitationem incidunt mollitia suscipit, deleniti, dignissimos provident qui recusandae ducimus nemo accusamus blanditiis fuga necessitatibus accusantium, voluptates ea eaque architecto eligendi.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab suscipit quidem numquam, dolore ullam eos illo porro quisquam voluptatibus corrupti cum asperiores. Voluptatem, aliquam! Ullam ex cupiditate sequi exercitationem porro!
-                </p>
+            <div class="field">
+                <label class="field__label" for="email">Email: </label>
+                <input id="email" class="field__campo"  type="email" placeholder="Tu Email">
             </div>
-        </div>
-    </div>
+            <div class="field">
+                <label class="field__label" for="message">Mensaje: </label>
+                <textarea id="message" class="field__campo field__campo--textarea" placeholder="Tu Mensaje"></textarea>
+            </div>
+            <div class="field">
+                <input type="submit" class="button button--primary" value="Enviar">
+            </div>
+        </form>
+    </main>
 
     <footer class="footer">
         <div class="container">

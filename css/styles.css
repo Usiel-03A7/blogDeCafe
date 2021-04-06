@@ -130,11 +130,15 @@ h4{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    width: 100%;
 }
 @media (min-width: 768px) {
     .button{
         display: inline-block;
     }
+}
+.button:hover{
+    cursor: pointer;
 }
 .button--primary{
     background-color: var(--black);
@@ -194,4 +198,43 @@ h4{
 }
 .course:last-of-type{
     border-bottom: none;
+}
+/* Contacto */
+.contact-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* FORM */
+.form{
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 3rem 0;
+
+}
+@media (min-width: 768px) {
+    .form{
+        padding: 5rem;
+    }
+}
+.field{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.field__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+.field__campo{
+    flex-basis: 80%;
+    border: 1px solid var(--gray);
+}
+.field__campo--textarea{
+    height: 20rem;
+}
+.field submit{
+
 }
