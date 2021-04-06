@@ -56,8 +56,13 @@ h4{
     text-align: center;
 }
 /* Header */
-.header{
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header{
     background-image: url(../img/banner.jpg);
+}
+.header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -234,7 +239,4 @@ h4{
 }
 .field__campo--textarea{
     height: 20rem;
-}
-.field submit{
-
 }
