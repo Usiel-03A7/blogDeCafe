@@ -32,6 +32,7 @@ a{
 }
 h1,h2,h3,h4{
     font-family: var(--fontHeading);
+    line-height: 1.2;
 }
 h1{
     font-size: 4.8rem;
@@ -49,7 +50,7 @@ h4{
 .no-margin{
     margin: 0;
 }
-.no-paggind{
+.no-padding{
     padding: 0;
 }
 .center-text{
@@ -133,6 +134,31 @@ h4{
         display: inline-block;
     }
 }
-.primary__button{
+.button--primary{
     background-color: var(--black);
+}
+.button--secundary{
+    background-color: var(--primaryColor);
+}
+.curses{
+    list-style: none;
+}
+.widget-curse{
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 2rem;
+}
+.widget-curse:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.widget-curse__label{
+    font-family: var(--fontHeading);
+    font-weight: bold;
+}
+.widget-curse__info{
+    font-weight: normal;
+}
+.widget-curse__label,
+.widget-curse__info{
+    font-size: 2rem;
 }
