@@ -142,26 +142,29 @@ h4{
 .button--secundary{
     background-color: var(--primaryColor);
 }
-.curses{
+.courses{
     list-style: none;
 }
-.widget-curse{
+.widget-course{
     border-bottom: 1px solid var(--gray);
     margin-bottom: 2rem;
 }
-.widget-curse:last-of-type{
+.widget-course:last-of-type{
     border-bottom: none;
     margin-bottom: 0;
 }
-.widget-curse__label{
+.widget-course__label,
+.course__label{
     font-family: var(--fontHeading);
     font-weight: bold;
 }
-.widget-curse__info{
+.widget-course__info,
+.course__info{
     font-weight: normal;
 }
-.widget-curse__label,
-.widget-curse__info{
+.widget-course__label,
+.widget-course__info,
+.course__label,.course__info{
     font-size: 2rem;
 }
 .footer{
@@ -177,9 +180,18 @@ h4{
         column-gap: 2rem;
     }
 }
-.about-us__image{
-
+/* courseS */
+.course{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gray);
 }
-.about-us__text{
-
+@media (min-width: 768px) {
+    .course{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.course:last-of-type{
+    border-bottom: none;
 }
